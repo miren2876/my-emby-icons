@@ -3,6 +3,10 @@
   "description": "自动生成的图标库",
   "icons": [
     {
+      "name": "bubingyingdi",
+      "url": "https://raw.githubusercontent.com/miren2876/my-emby-icons/main/icons/bubingyingdi.png"
+    },
+    {
       "name": "yecaodi",
       "url": "https://raw.githubusercontent.com/miren2876/my-emby-icons/main/icons/yecaodi.png"
     }
