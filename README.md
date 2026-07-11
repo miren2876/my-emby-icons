@@ -6,15 +6,13 @@
 
 ## 订阅链接
 
-请根据你的网络环境，选择以下任意一种链接导入到你的客户端中：
-
 1. jsDelivr 加速线路 (国内直连推荐)
    https://cdn.jsdelivr.net/gh/miren2876/my-emby-icons@main/my-emby-icon.json
 
 2. GitHub Proxy 加速线路 (备用)
    https://ghfast.top/https://raw.githubusercontent.com/miren2876/my-emby-icons/main/my-emby-icon.json
 
-3. GitHub 官方原始链接 (需要代理环境)
+3. GitHub 官方原始链接
    https://raw.githubusercontent.com/miren2876/my-emby-icons/main/my-emby-icon.json
 
 ---
