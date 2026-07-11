@@ -1,0 +1,37 @@
+name: Auto Generate Icon JSON
+
+# 触发条件：当你向 main 分支推送（Push）代码，且修改的文件在 icons 文件夹内时触发
+on:
+  push:
+    paths:
+      - 'icons/**'
+  workflow_dispatch: # 允许你手动在网页端点击运行
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. 检出仓库代码
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    # 2. 设置 Python 环境
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-packages: 'python3'
+
+    # 3. 运行你的 Python 脚本
+    - name: Run generation script
+      run: |
+        python generate_json.py
+
+    # 4. 自动把修改后的 JSON 文件提交并推送到仓库
+    - name: Commit and Push changes
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add my-emby-icon.json
+        # 只有在 JSON 文件确实有变动时才提交，防止报错
+        git diff --staged --quiet || (git commit -m "chore: auto update icon json [skip ci]" && git push)
