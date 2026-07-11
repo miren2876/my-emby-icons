@@ -1,10 +1,14 @@
 {
-  "name": "我自用 Emby 播放器图标库",
-  "description": "自用影视服务器与流媒体分流图标",
+  "name": "我的自建图标库",
+  "description": "自动生成的图标库",
   "icons": [
     {
       "name": "yecaodi",
       "url": "https://raw.githubusercontent.com/miren2876/my-emby-icons/main/icons/yecaodi.jpg"
+    },
+    {
+      "name": "yecaodi",
+      "url": "https://raw.githubusercontent.com/miren2876/my-emby-icons/main/icons/yecaodi.png"
     }
   ]
 }
